@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': { // This captures any request starting with /api
-        target: 'http://localhost:5000', // This sends it to your Node server
+        target: 'https://infohub-bytexl-2.onrender.com', // This sends it to your Node server
         changeOrigin: true,
         secure: false,
       }
